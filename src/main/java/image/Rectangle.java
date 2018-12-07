@@ -1,7 +1,5 @@
-package viewer;
+package image;
 
-import image.Point;
-import image.Shape;
 import javafx.scene.paint.Color;
 
 public class Rectangle implements Shape {
@@ -28,5 +26,10 @@ public class Rectangle implements Shape {
     @Override
     public Color getColor() {
         return this.color;
+    }
+
+    @Override
+    public Shape clone() {
+        return new Rectangle(this.x, this.y, this.width, this.height, this.color);
     }
 }

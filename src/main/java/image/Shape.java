@@ -15,4 +15,10 @@ public interface Shape {
      * @return the color of the shape.
      */
     Color getColor();
+    /**
+     * Return a reference to a shape that has the same attributes of the current one.
+     *
+     * @return a Copy of the shape.
+     */
+    Shape clone();
 }
